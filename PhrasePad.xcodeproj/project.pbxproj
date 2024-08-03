@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99359A482C5E00B20068DC59 /* PhrasePadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99359A472C5E00B20068DC59 /* PhrasePadApp.swift */; };
+		99359A4A2C5E00B20068DC59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99359A492C5E00B20068DC59 /* ContentView.swift */; };
+		99359A4C2C5E00B20068DC59 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99359A4B2C5E00B20068DC59 /* Item.swift */; };
+		99359A4E2C5E00B50068DC59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99359A4D2C5E00B50068DC59 /* Assets.xcassets */; };
+		99359A512C5E00B50068DC59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99359A502C5E00B50068DC59 /* Preview Assets.xcassets */; };
+		99359A5B2C5E00B50068DC59 /* PhrasePadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99359A5A2C5E00B50068DC59 /* PhrasePadTests.swift */; };
+		99359A652C5E00B50068DC59 /* PhrasePadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99359A642C5E00B50068DC59 /* PhrasePadUITests.swift */; };
+		99359A672C5E00B50068DC59 /* PhrasePadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99359A662C5E00B50068DC59 /* PhrasePadUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99359A572C5E00B50068DC59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99359A3C2C5E00B20068DC59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99359A432C5E00B20068DC59;
+			remoteInfo = PhrasePad;
+		};
+		99359A612C5E00B50068DC59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99359A3C2C5E00B20068DC59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99359A432C5E00B20068DC59;
+			remoteInfo = PhrasePad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		99359A442C5E00B20068DC59 /* PhrasePad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhrasePad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99359A472C5E00B20068DC59 /* PhrasePadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasePadApp.swift; sourceTree = "<group>"; };
+		99359A492C5E00B20068DC59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		99359A4B2C5E00B20068DC59 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		99359A4D2C5E00B50068DC59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99359A502C5E00B50068DC59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		99359A562C5E00B50068DC59 /* PhrasePadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhrasePadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99359A5A2C5E00B50068DC59 /* PhrasePadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasePadTests.swift; sourceTree = "<group>"; };
+		99359A602C5E00B50068DC59 /* PhrasePadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhrasePadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99359A642C5E00B50068DC59 /* PhrasePadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasePadUITests.swift; sourceTree = "<group>"; };
+		99359A662C5E00B50068DC59 /* PhrasePadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasePadUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99359A412C5E00B20068DC59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99359A532C5E00B50068DC59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99359A5D2C5E00B50068DC59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99359A3B2C5E00B20068DC59 = {
+			isa = PBXGroup;
+			children = (
+				99359A462C5E00B20068DC59 /* PhrasePad */,
+				99359A592C5E00B50068DC59 /* PhrasePadTests */,
+				99359A632C5E00B50068DC59 /* PhrasePadUITests */,
+				99359A452C5E00B20068DC59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99359A452C5E00B20068DC59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99359A442C5E00B20068DC59 /* PhrasePad.app */,
+				99359A562C5E00B50068DC59 /* PhrasePadTests.xctest */,
+				99359A602C5E00B50068DC59 /* PhrasePadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99359A462C5E00B20068DC59 /* PhrasePad */ = {
+			isa = PBXGroup;
+			children = (
+				99359A472C5E00B20068DC59 /* PhrasePadApp.swift */,
+				99359A492C5E00B20068DC59 /* ContentView.swift */,
+				99359A4B2C5E00B20068DC59 /* Item.swift */,
+				99359A4D2C5E00B50068DC59 /* Assets.xcassets */,
+				99359A4F2C5E00B50068DC59 /* Preview Content */,
+			);
+			path = PhrasePad;
+			sourceTree = "<group>";
+		};
+		99359A4F2C5E00B50068DC59 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				99359A502C5E00B50068DC59 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		99359A592C5E00B50068DC59 /* PhrasePadTests */ = {
+			isa = PBXGroup;
+			children = (
+				99359A5A2C5E00B50068DC59 /* PhrasePadTests.swift */,
+			);
+			path = PhrasePadTests;
+			sourceTree = "<group>";
+		};
+		99359A632C5E00B50068DC59 /* PhrasePadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				99359A642C5E00B50068DC59 /* PhrasePadUITests.swift */,
+				99359A662C5E00B50068DC59 /* PhrasePadUITestsLaunchTests.swift */,
+			);
+			path = PhrasePadUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99359A432C5E00B20068DC59 /* PhrasePad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99359A6A2C5E00B50068DC59 /* Build configuration list for PBXNativeTarget "PhrasePad" */;
+			buildPhases = (
+				99359A402C5E00B20068DC59 /* Sources */,
+				99359A412C5E00B20068DC59 /* Frameworks */,
+				99359A422C5E00B20068DC59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhrasePad;
+			productName = PhrasePad;
+			productReference = 99359A442C5E00B20068DC59 /* PhrasePad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99359A552C5E00B50068DC59 /* PhrasePadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99359A6D2C5E00B50068DC59 /* Build configuration list for PBXNativeTarget "PhrasePadTests" */;
+			buildPhases = (
+				99359A522C5E00B50068DC59 /* Sources */,
+				99359A532C5E00B50068DC59 /* Frameworks */,
+				99359A542C5E00B50068DC59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99359A582C5E00B50068DC59 /* PBXTargetDependency */,
+			);
+			name = PhrasePadTests;
+			productName = PhrasePadTests;
+			productReference = 99359A562C5E00B50068DC59 /* PhrasePadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99359A5F2C5E00B50068DC59 /* PhrasePadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99359A702C5E00B50068DC59 /* Build configuration list for PBXNativeTarget "PhrasePadUITests" */;
+			buildPhases = (
+				99359A5C2C5E00B50068DC59 /* Sources */,
+				99359A5D2C5E00B50068DC59 /* Frameworks */,
+				99359A5E2C5E00B50068DC59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99359A622C5E00B50068DC59 /* PBXTargetDependency */,
+			);
+			name = PhrasePadUITests;
+			productName = PhrasePadUITests;
+			productReference = 99359A602C5E00B50068DC59 /* PhrasePadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99359A3C2C5E00B20068DC59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					99359A432C5E00B20068DC59 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					99359A552C5E00B50068DC59 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 99359A432C5E00B20068DC59;
+					};
+					99359A5F2C5E00B50068DC59 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 99359A432C5E00B20068DC59;
+					};
+				};
+			};
+			buildConfigurationList = 99359A3F2C5E00B20068DC59 /* Build configuration list for PBXProject "PhrasePad" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99359A3B2C5E00B20068DC59;
+			productRefGroup = 99359A452C5E00B20068DC59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99359A432C5E00B20068DC59 /* PhrasePad */,
+				99359A552C5E00B50068DC59 /* PhrasePadTests */,
+				99359A5F2C5E00B50068DC59 /* PhrasePadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99359A422C5E00B20068DC59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99359A512C5E00B50068DC59 /* Preview Assets.xcassets in Resources */,
+				99359A4E2C5E00B50068DC59 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99359A542C5E00B50068DC59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99359A5E2C5E00B50068DC59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99359A402C5E00B20068DC59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99359A4A2C5E00B20068DC59 /* ContentView.swift in Sources */,
+				99359A4C2C5E00B20068DC59 /* Item.swift in Sources */,
+				99359A482C5E00B20068DC59 /* PhrasePadApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99359A522C5E00B50068DC59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99359A5B2C5E00B50068DC59 /* PhrasePadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99359A5C2C5E00B50068DC59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99359A652C5E00B50068DC59 /* PhrasePadUITests.swift in Sources */,
+				99359A672C5E00B50068DC59 /* PhrasePadUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99359A582C5E00B50068DC59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99359A432C5E00B20068DC59 /* PhrasePad */;
+			targetProxy = 99359A572C5E00B50068DC59 /* PBXContainerItemProxy */;
+		};
+		99359A622C5E00B50068DC59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99359A432C5E00B20068DC59 /* PhrasePad */;
+			targetProxy = 99359A612C5E00B50068DC59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		99359A682C5E00B50068DC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		99359A692C5E00B50068DC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99359A6B2C5E00B50068DC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PhrasePad/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takutoono.PhrasePad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99359A6C2C5E00B50068DC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PhrasePad/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takutoono.PhrasePad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		99359A6E2C5E00B50068DC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takutoono.PhrasePadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhrasePad.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhrasePad";
+			};
+			name = Debug;
+		};
+		99359A6F2C5E00B50068DC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takutoono.PhrasePadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhrasePad.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhrasePad";
+			};
+			name = Release;
+		};
+		99359A712C5E00B50068DC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takutoono.PhrasePadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhrasePad;
+			};
+			name = Debug;
+		};
+		99359A722C5E00B50068DC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takutoono.PhrasePadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhrasePad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99359A3F2C5E00B20068DC59 /* Build configuration list for PBXProject "PhrasePad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99359A682C5E00B50068DC59 /* Debug */,
+				99359A692C5E00B50068DC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99359A6A2C5E00B50068DC59 /* Build configuration list for PBXNativeTarget "PhrasePad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99359A6B2C5E00B50068DC59 /* Debug */,
+				99359A6C2C5E00B50068DC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99359A6D2C5E00B50068DC59 /* Build configuration list for PBXNativeTarget "PhrasePadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99359A6E2C5E00B50068DC59 /* Debug */,
+				99359A6F2C5E00B50068DC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99359A702C5E00B50068DC59 /* Build configuration list for PBXNativeTarget "PhrasePadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99359A712C5E00B50068DC59 /* Debug */,
+				99359A722C5E00B50068DC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99359A3C2C5E00B20068DC59 /* Project object */;
+}
