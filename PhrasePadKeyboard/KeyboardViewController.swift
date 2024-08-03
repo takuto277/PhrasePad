@@ -6,55 +6,44 @@
 //
 
 import UIKit
+import SwiftUI
 
 class KeyboardViewController: UIInputViewController {
 
-    @IBOutlet var nextKeyboardButton: UIButton!
-    
-    override func updateViewConstraints() {
-        super.updateViewConstraints()
-        
-        // Add custom view sizing constraints here
-    }
-    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Perform custom UI setup here
-        self.nextKeyboardButton = UIButton(type: .system)
-        
-        self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), for: [])
-        self.nextKeyboardButton.sizeToFit()
-        self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = false
-        
-        self.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
-        
-        self.view.addSubview(self.nextKeyboardButton)
-        
-        self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
-        self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+        setup()
     }
     
-    override func viewWillLayoutSubviews() {
-        self.nextKeyboardButton.isHidden = !self.needsInputModeSwitchKey
-        super.viewWillLayoutSubviews()
-    }
-    
-    override func textWillChange(_ textInput: UITextInput?) {
-        // The app is about to change the document's contents. Perform any preparation here.
-    }
-    
-    override func textDidChange(_ textInput: UITextInput?) {
-        // The app has just changed the document's contents, the document context has been updated.
-        
-        var textColor: UIColor
-        let proxy = self.textDocumentProxy
-        if proxy.keyboardAppearance == UIKeyboardAppearance.dark {
-            textColor = UIColor.white
-        } else {
-            textColor = UIColor.black
-        }
-        self.nextKeyboardButton.setTitleColor(textColor, for: [])
-    }
+    private func setup() {
+           let nextKeyboardAction = #selector(self.handleInputModeList(from:with:))
+           // カスタムUIのセットアップをここで行う
+           let keyboardView = PhrasePadKeyboardView(needsInputModeSwitchKey: needsInputModeSwitchKey,
+                                           nextKeyboardAction: nextKeyboardAction,
+                                           inputTextAction: { [weak self] text in
+               guard let self else { return }
+               self.textDocumentProxy.insertText(text)
+
+           }, deleteTextAction: { [weak self] in
+               guard let self,
+                     self.textDocumentProxy.hasText else { return }
+
+               self.textDocumentProxy.deleteBackward()
+           })
+
+           // keyboardViewのSuperViewのSuperView(UIHostingController)の背景を透明にする
+        let hostingController = UIHostingController(rootView: keyboardView.backgroundColor(.clear, 0))
+
+           self.addChild(hostingController)
+           self.view.addSubview(hostingController.view)
+           hostingController.didMove(toParent: self)
+
+           hostingController.view.translatesAutoresizingMaskIntoConstraints = false
+           NSLayoutConstraint.activate([
+               hostingController.view.leftAnchor.constraint(equalTo: view.leftAnchor),
+               hostingController.view.topAnchor.constraint(equalTo: view.topAnchor),
+               hostingController.view.rightAnchor.constraint(equalTo: view.rightAnchor),
+               hostingController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+           ])
+       }
 
 }

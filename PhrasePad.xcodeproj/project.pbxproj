@@ -17,6 +17,10 @@
 		99359A672C5E00B50068DC59 /* PhrasePadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99359A662C5E00B50068DC59 /* PhrasePadUITestsLaunchTests.swift */; };
 		99359A7A2C5E07470068DC59 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99359A792C5E07470068DC59 /* KeyboardViewController.swift */; };
 		99359A7E2C5E07480068DC59 /* PhrasePadKeyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 99359A772C5E07470068DC59 /* PhrasePadKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9956A0D22C5E1BCF00845E3F /* View+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A0D12C5E1BCF00845E3F /* View+BackgroundColor.swift */; };
+		9956A0D42C5E1E2E00845E3F /* NextKeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A0D32C5E1E2E00845E3F /* NextKeyboardButton.swift */; };
+		99FD8C002C5E0D9F0051DFFB /* PhrasePadKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FD8BFF2C5E0D9F0051DFFB /* PhrasePadKeyboardView.swift */; };
+		99FD8C012C5E0DBB0051DFFB /* PhrasePadKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FD8BFF2C5E0D9F0051DFFB /* PhrasePadKeyboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,9 @@
 		99359A772C5E07470068DC59 /* PhrasePadKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PhrasePadKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		99359A792C5E07470068DC59 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		99359A7B2C5E07470068DC59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9956A0D12C5E1BCF00845E3F /* View+BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+BackgroundColor.swift"; sourceTree = "<group>"; };
+		9956A0D32C5E1E2E00845E3F /* NextKeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextKeyboardButton.swift; sourceTree = "<group>"; };
+		99FD8BFF2C5E0D9F0051DFFB /* PhrasePadKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasePadKeyboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +176,10 @@
 			isa = PBXGroup;
 			children = (
 				99359A792C5E07470068DC59 /* KeyboardViewController.swift */,
+				99FD8BFF2C5E0D9F0051DFFB /* PhrasePadKeyboardView.swift */,
 				99359A7B2C5E07470068DC59 /* Info.plist */,
+				9956A0D12C5E1BCF00845E3F /* View+BackgroundColor.swift */,
+				9956A0D32C5E1E2E00845E3F /* NextKeyboardButton.swift */,
 			);
 			path = PhrasePadKeyboard;
 			sourceTree = "<group>";
@@ -336,6 +346,7 @@
 			files = (
 				99359A4A2C5E00B20068DC59 /* ContentView.swift in Sources */,
 				99359A4C2C5E00B20068DC59 /* Item.swift in Sources */,
+				99FD8C012C5E0DBB0051DFFB /* PhrasePadKeyboardView.swift in Sources */,
 				99359A482C5E00B20068DC59 /* PhrasePadApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,7 +372,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99FD8C002C5E0D9F0051DFFB /* PhrasePadKeyboardView.swift in Sources */,
+				9956A0D22C5E1BCF00845E3F /* View+BackgroundColor.swift in Sources */,
 				99359A7A2C5E07470068DC59 /* KeyboardViewController.swift in Sources */,
+				9956A0D42C5E1E2E00845E3F /* NextKeyboardButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
