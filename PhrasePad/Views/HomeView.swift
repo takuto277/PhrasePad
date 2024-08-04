@@ -13,7 +13,23 @@ struct HomeView: View {
     private let date = Date()
     private let titles = ["Clip", "コピペ", "Copy", "転写", "Paste", "複写", "添付", "Attach", "引用", "Quote", "切取", "Cut", "貼付"]
     
+    @State private var showListView = false
+    
     var body: some View {
+        ZStack {
+            if showListView {
+                ListView()
+                    .transition(.opacity)
+            } else {
+                homeContent
+                    .transition(.opacity)
+            }
+        }
+        .animation(.easeInOut, value: showListView)
+    }
+    
+    // タイトル画面
+    private var homeContent: some View {
         ZStack {
             TimelineView(.animation(minimumInterval: 1.0, paused: false)) { context in
                 let index = (Int(context.date.timeIntervalSince(date)) + 1) % titles.count
@@ -48,6 +64,11 @@ struct HomeView: View {
                     .backgroundDark()
                 Spacer()
                     .frame(height: UIScreen.main.bounds.height * 0.1)
+            }
+        }
+        .onTapGesture {
+            withAnimation {
+                showListView = true
             }
         }
     }

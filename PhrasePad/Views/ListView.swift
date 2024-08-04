@@ -8,11 +8,34 @@
 import SwiftUI
 
 struct ListView: View {
+    @State private var path = [Path]()
+    @State private var showMenu = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack(path: $path) {
+            VStack {
+                
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationDestination(for: Path.self) { path in
+                switch path {
+                case .gear:
+                    HomeView()
+                case .plus:
+                    HomeView()
+                }
+            }
+            // ナビゲーションバーに要素を配置
+            .modifier(Toolbar(showMenu: $showMenu, path: $path))
+            
+        }
+        .backgroundDark()
+        // メニューリスト設定
+        .modifier(MenuList(showMenu: $showMenu, path: $path))
     }
 }
 
 #Preview {
     ListView()
+        .preferredColorScheme(.dark)
 }
