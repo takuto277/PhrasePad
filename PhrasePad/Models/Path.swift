@@ -1,0 +1,18 @@
+//
+//  Path.swift
+//  PhrasePad
+//
+//  Created by 小野拓人 on 2024/08/05.
+//
+
+import SwiftUI
+
+struct Path: View {
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    }
+}
+
+#Preview {
+    Path()
+}
