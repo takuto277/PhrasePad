@@ -7,12 +7,8 @@
 
 import SwiftUI
 
-struct Path: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    Path()
+// ナビゲーション遷移
+enum Path: String, Hashable {
+    case gear
+    case plus
 }
