@@ -11,27 +11,42 @@ import SwiftData
 struct HomeView: View {
     @Environment(\.colorScheme) var scheme
     private let date = Date()
-    private let colors = [Color.green, .pink, .blue, .orange, .purple]
-    private let titles = ["豆腐", "寿司", "忍者", "温泉", "漫画"]
+    private let titles = ["Clip", "コピペ", "Copy", "転写", "Paste", "複写", "添付", "Attach", "引用", "Quote", "切取", "Cut", "貼付"]
     
     var body: some View {
-        TimelineView(.animation) { context in
-            let index = (Int(context.date.timeIntervalSince(date)) + 1) % colors.count
-            let color = colors[index]
-            Text(titles[index])
-                .contentTransition(.numericText(countsDown: true))
-                .animation(.default, value: index)
-                .font(.system(size: 65, weight: .thin))
-                .frame(width: 250)
-                .shadow(color: color, radius: 5)
-                .shadow(color: color, radius: 50)
-                .shadow(color: color, radius: 100)
-                .shadow(color: color, radius: 150)
-                .shadow(color: color, radius: 200)
+        ZStack {
+            TimelineView(.animation(minimumInterval: 1.0, paused: false)) { context in
+                let index = (Int(context.date.timeIntervalSince(date)) + 1) % titles.count
+                
+                let color = Color.randomColor(for: index)
+                Text(titles[index])
+                    .contentTransition(.numericText(countsDown: true))
+                    .animation(.default, value: index)
+                    .font(.system(size: 80, weight: .thin))
+                    .frame(width: 250)
+                    .mulchSadow(color: color)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .backgroundDark()
+            
+            VStack(alignment: .center) {
+                Spacer()
+                    .frame(height: UIScreen.main.bounds.height * 0.1)
+                
+                Text("PhrasePad")
+                    .font(.system(size: 60, weight: .bold))
+                    .backgroundDark()
+                    .mulchSadow(color: .white)
+                
+                Spacer()
+                Text("画面をタップ")
+                    .font(.system(size: 30, weight: .bold))
+                    .blinkEffect()
+                    .backgroundDark()
+                Spacer()
+                    .frame(height: UIScreen.main.bounds.height * 0.1)
+            }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .foregroundStyle(scheme == .light ? AnyShapeStyle(.background) : AnyShapeStyle(.foreground))
-        .background(scheme == .light ? AnyShapeStyle(.foreground) : AnyShapeStyle(.background))
     }
 }
 
