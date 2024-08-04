@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		991717AD2C5F8622006C4867 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991717AC2C5F8622006C4867 /* ListView.swift */; };
+		991717B02C5FDD70006C4867 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991717AF2C5FDD70006C4867 /* Path.swift */; };
+		991717B32C5FDE28006C4867 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991717B22C5FDE28006C4867 /* Toolbar.swift */; };
+		991717B52C5FDE4E006C4867 /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991717B42C5FDE4E006C4867 /* MenuList.swift */; };
 		99359A482C5E00B20068DC59 /* PhrasePadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99359A472C5E00B20068DC59 /* PhrasePadApp.swift */; };
 		99359A4A2C5E00B20068DC59 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99359A492C5E00B20068DC59 /* HomeView.swift */; };
 		99359A4E2C5E00B50068DC59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99359A4D2C5E00B50068DC59 /* Assets.xcassets */; };
@@ -70,6 +74,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		991717AC2C5F8622006C4867 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		991717AF2C5FDD70006C4867 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		991717B22C5FDE28006C4867 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
+		991717B42C5FDE4E006C4867 /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
 		99359A442C5E00B20068DC59 /* PhrasePad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhrasePad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99359A472C5E00B20068DC59 /* PhrasePadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasePadApp.swift; sourceTree = "<group>"; };
 		99359A492C5E00B20068DC59 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -126,6 +134,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		991717B12C5FDE12006C4867 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				991717B22C5FDE28006C4867 /* Toolbar.swift */,
+				991717B42C5FDE4E006C4867 /* MenuList.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 		99359A3B2C5E00B20068DC59 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +168,7 @@
 		99359A462C5E00B20068DC59 /* PhrasePad */ = {
 			isa = PBXGroup;
 			children = (
+				991717B12C5FDE12006C4867 /* ViewModifiers */,
 				9956A0DE2C5F154F00845E3F /* Utilities */,
 				9956A0DD2C5F13A000845E3F /* Extension */,
 				9956A0D82C5E82EE00845E3F /* Views */,
@@ -204,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				99359A492C5E00B20068DC59 /* HomeView.swift */,
+				991717AC2C5F8622006C4867 /* ListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,6 +237,7 @@
 		9956A0DA2C5E830500845E3F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				991717AF2C5FDD70006C4867 /* Path.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -403,15 +423,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				99359A4A2C5E00B20068DC59 /* HomeView.swift in Sources */,
+				991717AD2C5F8622006C4867 /* ListView.swift in Sources */,
 				9956A0E02C5F156D00845E3F /* BlinkEffect.swift in Sources */,
 				99FD8C012C5E0DBB0051DFFB /* PhrasePadKeyboardView.swift in Sources */,
 				9956A0D52C5E750A00845E3F /* NextKeyboardButton.swift in Sources */,
 				9956A0DC2C5F139A00845E3F /* ViewExtension.swift in Sources */,
 				9956A0D72C5E751500845E3F /* KeyboardViewController.swift in Sources */,
 				9956A0D62C5E751100845E3F /* View+BackgroundColor.swift in Sources */,
+				991717B02C5FDD70006C4867 /* Path.swift in Sources */,
 				9956A0E22C5F53CB00845E3F /* BackgroundDark.swift in Sources */,
+				991717B52C5FDE4E006C4867 /* MenuList.swift in Sources */,
 				9956A0E42C5F58ED00845E3F /* MulchSadow.swift in Sources */,
 				9956A0E82C5F655000845E3F /* SeededGenerator.swift in Sources */,
+				991717B32C5FDE28006C4867 /* Toolbar.swift in Sources */,
 				9956A0E62C5F5DE200845E3F /* ColorExtension.swift in Sources */,
 				99359A482C5E00B20068DC59 /* PhrasePadApp.swift in Sources */,
 			);
