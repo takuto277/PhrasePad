@@ -20,16 +20,15 @@ struct ListView: View {
             .navigationDestination(for: Path.self) { path in
                 switch path {
                 case .gear:
-                    HomeView()
+                    SettingView()
                 case .plus:
-                    HomeView()
+                    RegistrationView()
                 }
             }
             // ナビゲーションバーに要素を配置
             .modifier(Toolbar(showMenu: $showMenu, path: $path))
-            
+            .backgroundDark()
         }
-        .backgroundDark()
         // メニューリスト設定
         .modifier(MenuList(showMenu: $showMenu, path: $path))
     }

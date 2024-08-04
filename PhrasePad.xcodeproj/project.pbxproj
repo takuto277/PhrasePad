@@ -11,6 +11,8 @@
 		991717B02C5FDD70006C4867 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991717AF2C5FDD70006C4867 /* Path.swift */; };
 		991717B32C5FDE28006C4867 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991717B22C5FDE28006C4867 /* Toolbar.swift */; };
 		991717B52C5FDE4E006C4867 /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991717B42C5FDE4E006C4867 /* MenuList.swift */; };
+		991717B72C5FDFE6006C4867 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991717B62C5FDFE6006C4867 /* RegistrationView.swift */; };
+		991717B92C5FE063006C4867 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991717B82C5FE063006C4867 /* SettingView.swift */; };
 		99359A482C5E00B20068DC59 /* PhrasePadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99359A472C5E00B20068DC59 /* PhrasePadApp.swift */; };
 		99359A4A2C5E00B20068DC59 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99359A492C5E00B20068DC59 /* HomeView.swift */; };
 		99359A4E2C5E00B50068DC59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99359A4D2C5E00B50068DC59 /* Assets.xcassets */; };
@@ -78,6 +80,8 @@
 		991717AF2C5FDD70006C4867 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		991717B22C5FDE28006C4867 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
 		991717B42C5FDE4E006C4867 /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
+		991717B62C5FDFE6006C4867 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		991717B82C5FE063006C4867 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		99359A442C5E00B20068DC59 /* PhrasePad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhrasePad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99359A472C5E00B20068DC59 /* PhrasePadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasePadApp.swift; sourceTree = "<group>"; };
 		99359A492C5E00B20068DC59 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -223,6 +227,8 @@
 			children = (
 				99359A492C5E00B20068DC59 /* HomeView.swift */,
 				991717AC2C5F8622006C4867 /* ListView.swift */,
+				991717B62C5FDFE6006C4867 /* RegistrationView.swift */,
+				991717B82C5FE063006C4867 /* SettingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -425,8 +431,10 @@
 				99359A4A2C5E00B20068DC59 /* HomeView.swift in Sources */,
 				991717AD2C5F8622006C4867 /* ListView.swift in Sources */,
 				9956A0E02C5F156D00845E3F /* BlinkEffect.swift in Sources */,
+				991717B92C5FE063006C4867 /* SettingView.swift in Sources */,
 				99FD8C012C5E0DBB0051DFFB /* PhrasePadKeyboardView.swift in Sources */,
 				9956A0D52C5E750A00845E3F /* NextKeyboardButton.swift in Sources */,
+				991717B72C5FDFE6006C4867 /* RegistrationView.swift in Sources */,
 				9956A0DC2C5F139A00845E3F /* ViewExtension.swift in Sources */,
 				9956A0D72C5E751500845E3F /* KeyboardViewController.swift in Sources */,
 				9956A0D62C5E751100845E3F /* View+BackgroundColor.swift in Sources */,
