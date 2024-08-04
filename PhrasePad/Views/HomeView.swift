@@ -34,8 +34,11 @@ struct HomeView: View {
                     .frame(height: UIScreen.main.bounds.height * 0.1)
                 
                 Text("PhrasePad")
-                    .font(.system(size: 60, weight: .bold))
-                    .backgroundDark()
+                    .font(.system(size: 65, weight: .bold))
+                    .foregroundStyle(Color.white)
+                    .mulchSadow(color: .gray)
+                Text("万能なコピペ帳")
+                    .font(.system(size: 20, weight: .bold))
                     .mulchSadow(color: .white)
                 
                 Spacer()
@@ -53,5 +56,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .preferredColorScheme(.light)
     }
 }
