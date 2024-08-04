@@ -5,7 +5,6 @@
 //  Created by 小野拓人 on 2024/08/04.
 //
 
-import Foundation
 import SwiftUI
 
 // 影生成
