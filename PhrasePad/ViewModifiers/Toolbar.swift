@@ -18,11 +18,9 @@ struct Toolbar: ViewModifier {
                 ToolbarItem(placement: .navigationBarLeading) {
                     listIcon()
                 }
-                
                 ToolbarItem(placement: .principal) {
                     imageTitle()
                 }
-                
                 ToolbarItem(placement: .navigationBarTrailing) {
                     plusIcon()
                 }
@@ -48,13 +46,11 @@ struct Toolbar: ViewModifier {
     }
     
     private func plusIcon() -> some View {
-        ZStack(alignment: .topTrailing) {
-            Button {
-                path.append(.plus)
-            } label: {
-                Image(systemName: "plus.circle")
-                    .fontWeight(.bold)
-            }
+        Button {
+            path.append(.plus)
+        } label: {
+            Image(systemName: "plus.circle")
+                .fontWeight(.bold)
         }
     }
 }
