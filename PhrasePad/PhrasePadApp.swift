@@ -7,13 +7,19 @@
 
 import SwiftUI
 import SwiftData
+import ComposableArchitecture
 
 @main
 struct PhrasePadApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            HomeView(
+                store: Store(initialState: HomeState(), reducer: {
+                    HomeReducer()
+                }
+                            )
+            )
         }
     }
 }
