@@ -13,6 +13,7 @@
 		991717B52C5FDE4E006C4867 /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991717B42C5FDE4E006C4867 /* MenuList.swift */; };
 		991717B72C5FDFE6006C4867 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991717B62C5FDFE6006C4867 /* RegistrationView.swift */; };
 		991717B92C5FE063006C4867 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991717B82C5FE063006C4867 /* SettingView.swift */; };
+		991717BC2C6284D3006C4867 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 991717BB2C6284D3006C4867 /* ComposableArchitecture */; };
 		99359A482C5E00B20068DC59 /* PhrasePadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99359A472C5E00B20068DC59 /* PhrasePadApp.swift */; };
 		99359A4A2C5E00B20068DC59 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99359A492C5E00B20068DC59 /* HomeView.swift */; };
 		99359A4E2C5E00B50068DC59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99359A4D2C5E00B50068DC59 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		9956A0E42C5F58ED00845E3F /* MulchSadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A0E32C5F58ED00845E3F /* MulchSadow.swift */; };
 		9956A0E62C5F5DE200845E3F /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A0E52C5F5DE200845E3F /* ColorExtension.swift */; };
 		9956A0E82C5F655000845E3F /* SeededGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A0E72C5F655000845E3F /* SeededGenerator.swift */; };
+		99E0AA0C2C62868400A3C841 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 99E0AA0B2C62868400A3C841 /* ComposableArchitecture */; };
 		99FD8C002C5E0D9F0051DFFB /* PhrasePadKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FD8BFF2C5E0D9F0051DFFB /* PhrasePadKeyboardView.swift */; };
 		99FD8C012C5E0DBB0051DFFB /* PhrasePadKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FD8BFF2C5E0D9F0051DFFB /* PhrasePadKeyboardView.swift */; };
 /* End PBXBuildFile section */
@@ -111,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991717BC2C6284D3006C4867 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E0AA0C2C62868400A3C841 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +180,6 @@
 				9956A0DE2C5F154F00845E3F /* Utilities */,
 				9956A0DD2C5F13A000845E3F /* Extension */,
 				9956A0D82C5E82EE00845E3F /* Views */,
-				9956A0D92C5E82FF00845E3F /* ViewModels */,
 				9956A0DA2C5E830500845E3F /* Models */,
 				99359A472C5E00B20068DC59 /* PhrasePadApp.swift */,
 				99359A4D2C5E00B50068DC59 /* Assets.xcassets */,
@@ -233,13 +236,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		9956A0D92C5E82FF00845E3F /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		9956A0DA2C5E830500845E3F /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +282,9 @@
 				99359A7D2C5E07480068DC59 /* PBXTargetDependency */,
 			);
 			name = PhrasePad;
+			packageProductDependencies = (
+				991717BB2C6284D3006C4867 /* ComposableArchitecture */,
+			);
 			productName = PhrasePad;
 			productReference = 99359A442C5E00B20068DC59 /* PhrasePad.app */;
 			productType = "com.apple.product-type.application";
@@ -339,6 +338,9 @@
 			dependencies = (
 			);
 			name = PhrasePadKeyboard;
+			packageProductDependencies = (
+				99E0AA0B2C62868400A3C841 /* ComposableArchitecture */,
+			);
 			productName = PhrasePadKeyboard;
 			productReference = 99359A772C5E07470068DC59 /* PhrasePadKeyboard.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -378,6 +380,9 @@
 				Base,
 			);
 			mainGroup = 99359A3B2C5E00B20068DC59;
+			packageReferences = (
+				991717BA2C6284A0006C4867 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 99359A452C5E00B20068DC59 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -848,6 +853,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		991717BA2C6284A0006C4867 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.12.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		991717BB2C6284D3006C4867 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 991717BA2C6284A0006C4867 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		99E0AA0B2C62868400A3C841 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 991717BA2C6284A0006C4867 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 99359A3C2C5E00B20068DC59 /* Project object */;
 }
