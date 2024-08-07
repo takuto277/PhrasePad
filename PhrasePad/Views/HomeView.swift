@@ -17,7 +17,7 @@ struct HomeState: Equatable {
 
 enum HomeAction: Equatable {
     case toggleListView
-
+    
 }
 
 struct HomeEnvironment {
@@ -45,7 +45,6 @@ struct HomeView: View {
     @State private var showListView = false
     
     var body: some View {
-        Form {
         ZStack {
             if store.showListView {
                 ListView()
@@ -57,7 +56,6 @@ struct HomeView: View {
         }
         .animation(.easeInOut, value: store.showListView)
     }
-}
     
     // タイトル画面
     private func homeContent(store: StoreOf<HomeReducer>) -> some View {
@@ -98,7 +96,7 @@ struct HomeView: View {
             }
         }
         .onTapGesture {
-                store.send(.toggleListView)
+            store.send(.toggleListView)
         }
     }
 }
