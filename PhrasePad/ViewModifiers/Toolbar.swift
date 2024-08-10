@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 // 上部ツールバー設定
 struct Toolbar: ViewModifier {
-    @Binding var showMenu: Bool
-    @Binding var path: [Path]
+    @Bindable var store: StoreOf<ListReducer>
     
     func body(content: Content) -> some View {
         content
@@ -29,9 +29,7 @@ struct Toolbar: ViewModifier {
     
     private func listIcon() -> some View {
         Button {
-            withAnimation {
-                showMenu.toggle()
-            }
+                store.send(.toggleMenu)
         } label: {
             Image(systemName: "list.bullet")
                 .fontWeight(.bold)
@@ -47,7 +45,7 @@ struct Toolbar: ViewModifier {
     
     private func plusIcon() -> some View {
         Button {
-            path.append(.plus)
+            store.send(.updatePath(.plus))
         } label: {
             Image(systemName: "plus.circle")
                 .fontWeight(.bold)

@@ -11,15 +11,14 @@ import ComposableArchitecture
 
 @main
 struct PhrasePadApp: App {
+    static let store = Store(initialState: HomeState()) {
+        HomeReducer()
+            ._printChanges()
+    }
     
     var body: some Scene {
         WindowGroup {
-            HomeView(
-                store: Store(initialState: HomeState(), reducer: {
-                    HomeReducer()
-                }
-                            )
-            )
+            HomeView(store: PhrasePadApp.store)
         }
     }
 }

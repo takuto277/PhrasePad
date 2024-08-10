@@ -6,20 +6,19 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 // メニューリスト設定
 struct MenuList: ViewModifier {
-    @Binding var showMenu: Bool
-    @Binding var path: [Path]
-    
+    @Bindable var store: StoreOf<ListReducer>
     func body(content: Content) -> some View {
         content
             .overlay(
                 VStack {
-                    if showMenu {
+                    if store.showMenu {
                         VStack(alignment: .leading, spacing: 10) {
                             Button {
-                                showMenu.toggle()
+                                store.send(.toggleMenu)
                             } label: {
                                 HStack {
                                     Image(systemName: "arrow.up.arrow.down")
@@ -31,7 +30,7 @@ struct MenuList: ViewModifier {
                             .frame(width: 70)
                             
                             Button {
-                                showMenu.toggle()
+                                store.send(.toggleMenu)
                             } label: {
                                 HStack {
                                     Image(systemName: "trash")
@@ -44,8 +43,8 @@ struct MenuList: ViewModifier {
                             .frame(width: 70)
                             
                             Button {
-                                path.append(.gear)
-                                showMenu.toggle()
+                                store.send(.updatePath(.gear))
+                                store.send(.toggleMenu)
                             } label: {
                                 HStack {
                                     Image(systemName: "gear")
@@ -66,7 +65,7 @@ struct MenuList: ViewModifier {
                         .transition(.opacity)
                     }
                 }
-                    .animation(.easeInOut, value: showMenu),
+                    .animation(.easeInOut, value: store.showMenu),
                 alignment: .topLeading
             )
     }

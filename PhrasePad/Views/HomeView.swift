@@ -42,12 +42,12 @@ struct HomeView: View {
     @Environment(\.colorScheme) var scheme
     private let titles = ["Clip", "コピペ", "Copy", "転写", "Paste", "複写", "添付", "Attach", "引用", "Quote", "切取", "Cut", "貼付"]
     
-    @State private var showListView = false
-    
     var body: some View {
         ZStack {
             if store.showListView {
-                ListView()
+                ListView(store: Store(initialState: ListState(), reducer: {
+                    ListReducer()
+                }))
                     .transition(.opacity)
             } else {
                 homeContent(store: store)
@@ -109,6 +109,6 @@ struct HomeView_Previews: PreviewProvider {
             }
                         )
         )
-        .preferredColorScheme(.light)
+        .preferredColorScheme(.dark)
     }
 }
